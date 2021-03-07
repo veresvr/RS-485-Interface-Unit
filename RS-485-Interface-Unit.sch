@@ -8964,7 +8964,7 @@ DIN A4, landscape with location and doc. field</description>
 </classes>
 <parts>
 <part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/2" value="120"/>
-<part name="JP1" library="jumper" deviceset="JP1E" device=""/>
+<part name="JP1" library="jumper" deviceset="JP1E" device="" value="TERM"/>
 <part name="P+5" library="supply1" deviceset="+12V" device=""/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="IC1" library="veres" deviceset="B0505S" device=""/>
@@ -9081,11 +9081,11 @@ DIN A4, landscape with location and doc. field</description>
 </instance>
 <instance part="X1" gate="G$1" x="12.7" y="111.76" smashed="yes" rot="R180">
 <attribute name="NAME" x="15.24" y="104.14" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="33.02" y="119.888" size="1.778" layer="96" rot="R180"/>
+<attribute name="VALUE" x="27.94" y="119.888" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="X2" gate="G$1" x="12.7" y="88.9" smashed="yes" rot="R180">
 <attribute name="NAME" x="15.24" y="81.28" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="33.02" y="79.248" size="1.778" layer="96" rot="R180"/>
+<attribute name="VALUE" x="27.94" y="79.248" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="R2" gate="G$1" x="40.64" y="154.94" smashed="yes" rot="MR90">
 <attribute name="NAME" x="42.1386" y="151.13" size="1.778" layer="95" rot="MR90"/>
