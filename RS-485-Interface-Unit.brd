@@ -23,7 +23,7 @@
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -40,7 +40,7 @@
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
@@ -70,44 +70,14 @@
 <wire x1="60.5" y1="6.6" x2="7.5" y2="6.6" width="0.1524" layer="20"/>
 <wire x1="7.5" y1="6.6" x2="7.5" y2="36.6" width="0.1524" layer="20"/>
 <hole x="11" y="33.1" drill="3"/>
-<polygon width="0.1" layer="29">
-<vertex x="8.1" y="10.3" curve="-90"/>
-<vertex x="11.1" y="13.3" curve="-90"/>
-<vertex x="14.1" y="10.3" curve="-90"/>
-<vertex x="11.1" y="7.3" curve="-90"/>
-</polygon>
-<polygon width="0.1" layer="29">
-<vertex x="8" y="33.2" curve="-90"/>
-<vertex x="11" y="36.2" curve="-90"/>
-<vertex x="14" y="33.2" curve="-90"/>
-<vertex x="11" y="30.2" curve="-90"/>
-</polygon>
-<polygon width="0.1" layer="30">
-<vertex x="7.2" y="23"/>
-<vertex x="60.9" y="23"/>
-<vertex x="60.9" y="21.3"/>
-<vertex x="7.2" y="21.3"/>
-</polygon>
-<polygon width="0.1" layer="30">
+<polygon width="0.1" layer="42">
 <vertex x="7.2" y="23"/>
 <vertex x="60.2" y="23"/>
 <vertex x="60.2" y="21.3"/>
 <vertex x="7.2" y="21.3"/>
 </polygon>
-<polygon width="0.1" layer="29">
-<vertex x="54" y="10.1" curve="-90"/>
-<vertex x="57" y="13.1" curve="-90"/>
-<vertex x="60" y="10.1" curve="-90"/>
-<vertex x="57" y="7.1" curve="-90"/>
-</polygon>
 <dimension x1="7.5" y1="6.6" x2="11" y2="10.6" x3="9.25" y3="-5.9" textsize="1.778" layer="47" dtype="horizontal"/>
 <dimension x1="57" y1="10.6" x2="60.5" y2="6.6" x3="58.75" y3="-3.2" textsize="1.778" layer="47" dtype="horizontal"/>
-<polygon width="0.1" layer="29">
-<vertex x="54.1" y="33" curve="-90"/>
-<vertex x="57.1" y="36" curve="-90"/>
-<vertex x="60.1" y="33" curve="-90"/>
-<vertex x="57.1" y="30" curve="-90"/>
-</polygon>
 <text x="35.9" y="24.3" size="1.27" layer="25" rot="R90">!RE! RX</text>
 <text x="38.4" y="22.9" size="1.27" layer="25" rot="R90">DE GND</text>
 <text x="41" y="24.7" size="1.27" layer="25" rot="R90">PV TX</text>
@@ -115,13 +85,31 @@
 <text x="22.8" y="29.7" size="1.27" layer="25" rot="R90">+12</text>
 <text x="32.2" y="29.3" size="1.27" layer="25" rot="R90">+3.3</text>
 <text x="27.6" y="32.1" size="1.27" layer="25" rot="R90">GND</text>
-<dimension x1="7.5" y1="36.6" x2="7.5" y2="6.6" x3="-2" y3="21.6" textsize="1.778" layer="49" dtype="vertical"/>
-<dimension x1="7.5" y1="36.6" x2="60.5" y2="36.6" x3="34" y3="47.8" textsize="1.778" layer="49" dtype="horizontal"/>
-<dimension x1="60.5" y1="36.6" x2="57" y2="33.1" x3="58.75" y3="39.9" textsize="1.778" layer="49" dtype="horizontal"/>
-<dimension x1="57" y1="33.1" x2="60.5" y2="36.6" x3="71.6" y3="34.85" textsize="1.778" layer="49" dtype="vertical"/>
+<dimension x1="7.5" y1="36.6" x2="7.5" y2="6.6" x3="-2" y3="21.6" textsize="1.778" layer="47" dtype="vertical"/>
+<dimension x1="7.5" y1="36.6" x2="60.5" y2="36.6" x3="34" y3="47.8" textsize="1.778" layer="47" dtype="horizontal"/>
+<dimension x1="60.5" y1="36.6" x2="57" y2="33.1" x3="58.75" y3="39.9" textsize="1.778" layer="47" dtype="horizontal"/>
+<dimension x1="57" y1="33.1" x2="60.5" y2="36.6" x3="71.6" y3="34.85" textsize="1.778" layer="47" dtype="vertical"/>
 <dimension x1="7.5" y1="6.6" x2="7.5" y2="10.1" x3="67.4" y3="8.35" textsize="1.778" layer="47" dtype="vertical"/>
 <dimension x1="11" y1="10.1" x2="11" y2="33.1" x3="3.3" y3="21.6" textsize="1.778" layer="47" dtype="vertical"/>
 <dimension x1="11" y1="33.1" x2="57" y2="33.1" x3="34" y3="39.9" textsize="1.778" layer="47" dtype="horizontal"/>
+<polygon width="0.1" layer="41">
+<vertex x="7.2" y="23"/>
+<vertex x="60.2" y="23"/>
+<vertex x="60.2" y="21.3"/>
+<vertex x="7.2" y="21.3"/>
+</polygon>
+<polygon width="0.1" layer="29">
+<vertex x="60.5" y="23"/>
+<vertex x="7.5" y="23"/>
+<vertex x="7.5" y="21.3"/>
+<vertex x="60.5" y="21.3"/>
+</polygon>
+<polygon width="0.1" layer="30">
+<vertex x="60.4" y="23"/>
+<vertex x="7.4" y="23"/>
+<vertex x="7.4" y="21.3"/>
+<vertex x="60.4" y="21.3"/>
+</polygon>
 </plain>
 <libraries>
 <library name="jumper">
@@ -1797,7 +1785,9 @@ design rules under a new name.</description>
 <wire x1="31.65" y1="29.9943625" x2="31.65" y2="33.0578" width="0.6" layer="16"/>
 <wire x1="44.95" y1="31" x2="44.95" y2="30.35" width="0.6" layer="16"/>
 <wire x1="44.95" y1="30.35" x2="42.5" y2="27.9" width="0.6" layer="16"/>
-<wire x1="24.289359375" y1="25.97045" x2="29.32955" y2="25.97045" width="1" layer="16"/>
+<wire x1="24.289359375" y1="25.97045" x2="27.2" y2="25.97045" width="1" layer="16"/>
+<wire x1="27.2" y1="25.97045" x2="27.4" y2="25.97045" width="1" layer="16"/>
+<wire x1="27.4" y1="25.97045" x2="29.32955" y2="25.97045" width="1" layer="16"/>
 <wire x1="30.8" y1="24.5" x2="33" y2="24.5" width="1" layer="16"/>
 <wire x1="33" y1="24.5" x2="40.2" y2="24.5" width="1" layer="16"/>
 <wire x1="40.2" y1="24.5" x2="40.6" y2="24.9" width="1" layer="16"/>
@@ -1818,6 +1808,7 @@ design rules under a new name.</description>
 <wire x1="37.8" y1="34.3" x2="37.8" y2="33.67" width="0.6" layer="16"/>
 <wire x1="31.65" y1="33.0578" x2="34.0274" y2="35.4352" width="0.6" layer="16"/>
 <wire x1="36.6648" y1="35.4352" x2="37.8" y2="34.3" width="0.6" layer="16"/>
+<wire x1="27.2" y1="25.97045" x2="27.2" y2="25.97045" width="1" layer="16"/>
 </signal>
 <signal name="+5V">
 <contactref element="C2" pad="1"/>
