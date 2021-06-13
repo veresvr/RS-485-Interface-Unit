@@ -8995,6 +8995,8 @@ DIN A4, landscape with location and doc. field</description>
 <part name="JP7" library="jumper" deviceset="JP1E" device="" value="PWR"/>
 <part name="JP2" library="jumper" deviceset="PLS-(2х3)" device=""/>
 <part name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10K"/>
+<part name="GND2" library="supply1" deviceset="GNDIO" device=""/>
+<part name="GND3" library="supply1" deviceset="GNDIO" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9015,13 +9017,13 @@ DIN A4, landscape with location and doc. field</description>
 1. Power Valid pin used for enable connect internal cirquits of IC2 to transmission line.</text>
 </plain>
 <instances>
-<instance part="R1" gate="G$1" x="38.1" y="93.98" smashed="yes" rot="MR90">
-<attribute name="NAME" x="39.5986" y="90.17" size="1.778" layer="95" rot="MR90"/>
-<attribute name="VALUE" x="34.798" y="90.17" size="1.778" layer="96" rot="MR90"/>
+<instance part="R1" gate="G$1" x="40.64" y="93.98" smashed="yes" rot="MR90">
+<attribute name="NAME" x="42.1386" y="90.17" size="1.778" layer="95" rot="MR90"/>
+<attribute name="VALUE" x="37.338" y="90.17" size="1.778" layer="96" rot="MR90"/>
 </instance>
-<instance part="JP1" gate="A" x="35.56" y="83.82" smashed="yes" rot="R90">
-<attribute name="NAME" x="35.56" y="82.55" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="35.56" y="89.535" size="1.778" layer="96" rot="R180"/>
+<instance part="JP1" gate="A" x="43.18" y="83.82" smashed="yes" rot="R180">
+<attribute name="NAME" x="44.45" y="83.82" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="37.465" y="83.82" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="P+5" gate="1" x="177.8" y="160.02" smashed="yes">
 <attribute name="VALUE" x="175.26" y="154.94" size="1.778" layer="96" rot="R90"/>
@@ -9128,6 +9130,12 @@ DIN A4, landscape with location and doc. field</description>
 <attribute name="NAME" x="108.1786" y="85.09" size="1.778" layer="95" rot="MR90"/>
 <attribute name="VALUE" x="103.378" y="85.09" size="1.778" layer="96" rot="MR90"/>
 </instance>
+<instance part="GND2" gate="G$1" x="27.94" y="88.9" smashed="yes">
+<attribute name="VALUE" x="25.4" y="86.36" size="1.778" layer="96"/>
+</instance>
+<instance part="GND3" gate="G$1" x="27.94" y="111.76" smashed="yes">
+<attribute name="VALUE" x="25.4" y="109.22" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -9204,12 +9212,12 @@ DIN A4, landscape with location and doc. field</description>
 </net>
 <net name="B-IN" class="0">
 <segment>
-<wire x1="53.34" y1="101.6" x2="43.18" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="101.6" x2="45.72" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="A" pin="1"/>
-<wire x1="43.18" y1="101.6" x2="20.32" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="83.82" x2="43.18" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="83.82" x2="43.18" y2="101.6" width="0.1524" layer="91"/>
-<junction x="43.18" y="101.6"/>
+<wire x1="45.72" y1="101.6" x2="20.32" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="86.36" x2="45.72" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="86.36" x2="45.72" y2="101.6" width="0.1524" layer="91"/>
+<junction x="45.72" y="101.6"/>
 <pinref part="IC2" gate="G$1" pin="B"/>
 <pinref part="X1" gate="G$1" pin="1"/>
 <wire x1="15.24" y1="106.68" x2="20.32" y2="106.68" width="0.1524" layer="91"/>
@@ -9222,12 +9230,12 @@ DIN A4, landscape with location and doc. field</description>
 </net>
 <net name="A-IN" class="0">
 <segment>
-<wire x1="53.34" y1="106.68" x2="38.1" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="106.68" x2="38.1" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="104.14" x2="22.86" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="106.68" x2="40.64" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="106.68" x2="40.64" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="104.14" x2="22.86" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="38.1" y1="99.06" x2="38.1" y2="104.14" width="0.1524" layer="91"/>
-<junction x="38.1" y="104.14"/>
+<wire x1="40.64" y1="99.06" x2="40.64" y2="104.14" width="0.1524" layer="91"/>
+<junction x="40.64" y="104.14"/>
 <pinref part="IC2" gate="G$1" pin="A"/>
 <pinref part="X1" gate="G$1" pin="2"/>
 <wire x1="15.24" y1="109.22" x2="22.86" y2="109.22" width="0.1524" layer="91"/>
@@ -9242,7 +9250,7 @@ DIN A4, landscape with location and doc. field</description>
 <segment>
 <pinref part="JP1" gate="A" pin="2"/>
 <pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="38.1" y1="86.36" x2="38.1" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="86.36" x2="40.64" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="UART_TX" class="0">
@@ -9320,6 +9328,16 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="48.26" y1="152.4" x2="48.26" y2="149.86" width="0.1524" layer="91"/>
 <junction x="48.26" y="149.86"/>
 </segment>
+<segment>
+<pinref part="X1" gate="G$1" pin="4"/>
+<pinref part="GND3" gate="G$1" pin="GNDIO"/>
+<wire x1="15.24" y1="114.3" x2="27.94" y2="114.3" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="X2" gate="G$1" pin="4"/>
+<pinref part="GND2" gate="G$1" pin="GNDIO"/>
+<wire x1="15.24" y1="91.44" x2="27.94" y2="91.44" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="POWER_VALID" class="0">
 <segment>
@@ -9369,6 +9387,17 @@ DIN A4, landscape with location and doc. field</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="102,1,101.6,132.08,VDD1,+3V3,,,,"/>
+<approved hash="102,1,101.6,93.98,GND1,GND,,,,"/>
+<approved hash="102,1,53.34,132.08,VDD2,VCCIO,,,,"/>
+<approved hash="102,1,53.34,93.98,GND2,GNDIO,,,,"/>
+<approved hash="104,1,99.06,160.02,IC1,VIN,+5V,,,"/>
+<approved hash="104,1,55.88,154.94,IC1,GNDOUT,GNDIO,,,"/>
+<approved hash="104,1,99.06,154.94,IC1,GNDIN,GND,,,"/>
+<approved hash="104,1,55.88,160.02,IC1,VOUT,VCCIO,,,"/>
+<approved hash="113,1,130.071,89.431,FRAME1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
